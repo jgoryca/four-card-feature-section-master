@@ -58,11 +58,11 @@ h2 {
   text-align: center;
   font-size: clamp(1.2rem, calc(0.8rem + 1.7vw), 3rem);
   font-weight: 200;
-  color: $grey;
+  color: $grey-dark;
 
   @media (min-width: $bp-large) {
-    margin-top: 10rem;
-    font-size: clamp(1.2rem, calc(0.4rem + 1vw), 3rem);
+    margin: 12rem auto 10rem auto;
+    font-size: clamp(1.2rem, calc(0.4rem + 0.7vw), 2rem);
   }
 }
 
@@ -70,7 +70,7 @@ h2 {
   margin: 1.5rem 3rem;
 
   @media (min-width: $bp-large) {
-    margin: 0 3rem;
+    margin: 0 10rem;
   }
 }
 
@@ -96,23 +96,26 @@ main {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  @media (min-width: $bp-large) {
+    gap: 1em;
+  }
 
   &__title {
     color: $grey-dark;
     font-size: clamp(1.8rem, calc(1.2rem + 2vw), 4rem);
 
     @media (min-width: $bp-large) {
-      font-size: clamp(1.8rem, calc(0.8rem + 0.7vw), 3rem);
+      font-size: clamp(1.8rem, calc(0.8rem + 1vw), 3rem);
     }
   }
 
   &__p {
     margin-bottom: 3em;
     font-size: clamp(1rem, calc(0.8rem + 1.6vw), 2rem);
-    color: $grey;
+    color: $grey-dark;
 
     @media (min-width: $bp-large) {
-      font-size: clamp(1rem, calc(0.2rem + 0.7vw), 3rem);
+      font-size: clamp(1rem, calc(0.3rem + 0.8vw), 3rem);
     }
   }
 

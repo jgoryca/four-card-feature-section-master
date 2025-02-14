@@ -27,7 +27,7 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 1.4;
   min-height: 100vh;
   background-color: $grey-light;
 }
@@ -36,11 +36,19 @@ h1 {
   font-size: clamp(2rem, calc(1.5rem + 2vw), 5rem);
   font-weight: 600;
   color: $grey-dark;
+
+  @media (min-width: $bp-large) {
+    font-size: clamp(2rem, calc(1.5rem + 1.5vw), 5rem);
+  }
 }
 
 h2 {
-  font-size: clamp(2rem, calc(1.5rem + 2vw), 5rem);
+  font-size: clamp(2rem, calc(1.5rem + 1.2vw), 5rem);
   font-weight: 200;
+
+  @media (min-width: $bp-large) {
+    font-size: clamp(2rem, calc(1.5rem + 1.2vw), 5rem);
+  }
 }
 
 .hero {
@@ -53,12 +61,17 @@ h2 {
   color: $grey;
 
   @media (min-width: $bp-large) {
+    margin-top: 10rem;
     font-size: clamp(1.2rem, calc(0.4rem + 1vw), 3rem);
   }
 }
 
 .hero p {
   margin: 1.5rem 3rem;
+
+  @media (min-width: $bp-large) {
+    margin: 0 3rem;
+  }
 }
 
 main {
@@ -89,17 +102,17 @@ main {
     font-size: clamp(1.8rem, calc(1.2rem + 2vw), 4rem);
 
     @media (min-width: $bp-large) {
-      font-size: clamp(1.8rem, calc(0.8rem + 1vw), 4rem);
+      font-size: clamp(1.8rem, calc(0.8rem + 0.7vw), 3rem);
     }
   }
 
   &__p {
     margin-bottom: 3em;
-    font-size: clamp(1rem, calc(0.8rem + 1.6vw), 3rem);
+    font-size: clamp(1rem, calc(0.8rem + 1.6vw), 2rem);
     color: $grey;
 
     @media (min-width: $bp-large) {
-      font-size: clamp(1rem, calc(0.2rem + 1vw), 3rem);
+      font-size: clamp(1rem, calc(0.2rem + 0.7vw), 3rem);
     }
   }
 

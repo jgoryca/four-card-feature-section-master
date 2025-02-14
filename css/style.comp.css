@@ -41,14 +41,14 @@ h2 {
   color: #4c4e61; }
   @media (min-width: 75rem) {
     .hero {
-      margin: 12rem auto 10rem auto;
+      margin: 10rem auto 6rem auto;
       font-size: clamp(1.2rem, calc(0.4rem + 0.7vw), 2rem); } }
 
 .hero p {
   margin: 1.5rem 3rem; }
   @media (min-width: 75rem) {
     .hero p {
-      margin: 0 10rem; } }
+      margin: 2rem 10rem 0 10rem; } }
 
 main {
   width: 90%;
@@ -78,7 +78,7 @@ main {
     font-size: clamp(1.8rem, calc(1.2rem + 2vw), 4rem); }
     @media (min-width: 75rem) {
       .card__title {
-        font-size: clamp(1.8rem, calc(0.8rem + 1vw), 3rem); } }
+        font-size: clamp(1.8rem, calc(0.6rem + 1vw), 3rem); } }
   .card__p {
     margin-bottom: 3em;
     font-size: clamp(1rem, calc(0.8rem + 1.6vw), 2rem);
